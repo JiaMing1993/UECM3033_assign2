@@ -3,6 +3,7 @@ import matplotlib.image as mpimg
 import numpy as np
 import scipy.linalg as sp
 
+#Compress - Lower resolution picture
 img=mpimg.imread('pic.jpg')
 [r,g,b] = [img[:,:,i] for i in range(3)]
 
@@ -42,8 +43,7 @@ ax3.imshow(g, cmap = 'Greens')
 ax4.imshow(b, cmap = 'Blues')
 plt.show()
 
-#=========================================================================#
-
+#Compress - better resolution picture
 img_2=mpimg.imread('pic.jpg')
 [r2,g2,b2] = [img_2[:,:,i] for i in range(3)]
 
