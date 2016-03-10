@@ -22,7 +22,6 @@ def sor(A, b):
     sol=x
     return list(sol)
 
-
 def solve(A, b): 
     try:       
         np.linalg.cholesky(A)
